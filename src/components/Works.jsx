@@ -1,21 +1,25 @@
 
+import myimage1 from '../photos/hobo.png'
+import myimage2 from '../photos/finearts.png'
+import myimage3 from '../photos/codingclub.png'
+
 const Works = () => {
   const projects = [
     {
       title: "HOBO-COLLEGE PROJECT",
-      image: "https://via.placeholder.com/500x200/2f0076/ffffff?text=HOBO",
+      image: myimage1,
       description: "Hobo is a platform that offers ad space renting services, allowing businesses to advertise their products on available physical or digital spaces. Through an easy-to-use interface, advertisers can book slots, and space owners can earn revenue by listing their locations for ads—making Hobo a smart bridge between ad seekers and space providers.",
       link: null
     },
     {
       title: "CODING CLUB",
-      image: "https://via.placeholder.com/500x200/2f0076/ffffff?text=CODING+CLUB",
+      image: myimage3,
       description: "Coding Club is a student-led club created to motivate college students and bridge the gap between academics and the tech industry. It offers training to help students excel in real-world skills. The official website was designed and developed by me using HTML, CSS, and JavaScript.",
       link: "https://codingclubjdt.in/"
     },
     {
       title: "COLLEGE FINE ARTS RESULTS",
-      image: "https://via.placeholder.com/500x200/2f0076/ffffff?text=FINE+ARTS",
+      image: myimage2,
       description: "Developed a static website to display the results of Fine Arts events, making it easy for students and faculty to view results online. The site was built using HTML, CSS, and JavaScript for a simple and responsive user experience.",
       link: "https://anshikn.github.io/finearts/"
     }

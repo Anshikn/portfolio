@@ -4,6 +4,8 @@ import About from './components/About'
 import Home from './components/Home'
 import Works from './components/works'
 import Contacts from './components/Contacts'
+import AnimatedBackground from './components/AnimatedBackground'
+import cv from './assets/pdf/MUHAMMED ANSHIK N (SD).pdf'
 import { Router, Link, Routes, Route, BrowserRouter } from "react-router-dom"
 
 
@@ -13,20 +15,18 @@ function App() {
   return (
     <>
       <BrowserRouter >
+        <AnimatedBackground />
 
 
 
         {/* Navigation */}
         <nav className="flex items-center justify-between mt-12 px-4 relative z-10">
-          <h2 className="pl-16 text-xl">
+          <Link to="/"><h2 className="pl-16 text-xl">
             Muhammed <span className="text-[#560cc6]">Anshik N</span>
-          </h2>
+
+          </h2></Link>
           <ul className="flex list-none space-x-8 pr-8">
-            <li>
-              <Link to="/" className=" hover:text-[#560cc6] transition-colors">
-                Home
-              </Link>
-            </li>
+
             <li>
               <Link to="/works" className="hover:text-[#560cc6] transition-colors">
                 Works
@@ -44,7 +44,7 @@ function App() {
             </li>
             <li>
               <a
-                href="/MUHAMMED ANSHIK N (SD).pdf"
+                href={cv}
                 target="_blank"
                 className="hover:text-[#560cc6] transition-colors"
               >

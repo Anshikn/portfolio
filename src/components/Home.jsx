@@ -1,5 +1,5 @@
 
-
+import myImage from '../photos/gv.png';
 function Home() {
 
   return (
@@ -7,7 +7,7 @@ function Home() {
       <div className="flex items-center mt-24">
         <img
           className="h-48 rounded-[50px] mr-12"
-          src="https://via.placeholder.com/200x200/560cc6/ffffff?text=Anshik"
+          src={myImage}
           alt="Profile"
         />
         <div className="mt-6">
