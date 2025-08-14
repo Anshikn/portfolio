@@ -24,30 +24,31 @@ const Works = () => {
       link: "https://anshikn.github.io/finearts/"
     }
   ];
+
   return (
-    <section className="px-16 py-8">
-      <h2 className="text-2xl mb-8">
-        <span className="text-[#560cc6]">Capstone and </span>Mini Projects
+    <section className="px-4 md:px-16 py-8">
+      <h2 className="text-xl md:text-2xl mb-6 md:mb-8 text-center md:text-left">
+        <span className="text-purple-500">Capstone and </span>Mini Projects
       </h2>
-      <div className="space-y-12">
+      <div className="space-y-8 md:space-y-12">
         {projects.map((project, index) => (
-          <div key={index} className="flex justify-center items-center">
+          <div key={index} className="flex flex-col md:flex-row justify-center items-center">
             <img
-              className="h-48 w-[500px] rounded-[50px] object-cover"
+              className="h-32 w-full max-w-md md:h-48 md:w-[500px] rounded-[30px] md:rounded-[50px] object-cover mb-4 md:mb-0"
               src={project.image}
               alt={project.title}
             />
-            <div className="pl-12 max-w-2xl">
-              <div className="text-xl mb-2">
+            <div className="md:pl-12 max-w-2xl text-center md:text-left px-4 md:px-0">
+              <div className="text-lg md:text-xl mb-2">
                 {project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#6811ec] hover:underline">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:underline">
                     {project.title}
                   </a>
                 ) : (
-                  <span className="text-[#6811ec]">{project.title}</span>
+                  <span className="text-purple-400">{project.title}</span>
                 )}
               </div>
-              <p className="text-[#c8bdd8] leading-relaxed pt-2">
+              <p className="text-purple-200 leading-relaxed pt-2 text-sm md:text-base">
                 {project.description}
               </p>
             </div>

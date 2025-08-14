@@ -1,14 +1,14 @@
-function AnimatedBackground() {
+const AnimatedBackground = () => {
   return (
     <div className="fixed inset-0 -z-10">
-      <div
-        className="absolute left-[30%] top-[20%] w-[450px] h-[450px] bg-[#2f0076] animate-pulse"
-        style={{
-          borderRadius: '62% 47% 82% 35% / 45% 45% 80% 66%',
-          animation: 'sliderShape 5s linear infinite'
-        }}
-      />
+      <div className="absolute left-[20%] md:left-[30%] top-[10%] md:top-[20%] w-[250px] h-[250px] md:w-[450px] md:h-[450px] bg-[#2f0076] opacity-40 md:opacity-60 blob-animation" />
+
       <style jsx>{`
+        .blob-animation {
+          border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+          animation: sliderShape 5s ease-in-out infinite;
+        }
+        
         @keyframes sliderShape {
           0%, 100% {
             border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
@@ -30,5 +30,4 @@ function AnimatedBackground() {
     </div>
   );
 };
-
 export default AnimatedBackground;
