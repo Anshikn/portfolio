@@ -2,11 +2,12 @@
 import './App.css'
 import About from './components/About'
 import Home from './components/Home'
-import Works from './components/works'
+import Works from './components/Works'
 import Contacts from './components/Contacts'
 import AnimatedBackground from './components/AnimatedBackground'
 import cv from './assets/pdf/MUHAMMED ANSHIK N (SD).pdf'
 import { Router, Link, Routes, Route, BrowserRouter } from "react-router-dom"
+
 
 
 function App() {
